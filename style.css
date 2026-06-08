@@ -1,0 +1,262 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family:  "Sagoe ui", Arial, sans-serif ;
+    line-height: 1.5;
+    color: brown;
+    background-color: beige;
+}
+
+a {
+    text-decoration: none;
+    color: beige;
+}
+
+#navbar{
+    display: flex;
+    justify-content: space-around;
+    background-color: brown;
+    color: beige;
+    top: 0;
+    z-index: 1000;
+    position: sticky;
+}
+
+#navbar .logo {
+    font-weight: bold;
+    font-size: 2rem;
+    color: beige;
+}
+
+#navbar .menu{
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+}
+
+#navbar .menu a:hover{
+    color: blueviolet;
+}
+
+#hero {
+    min-height: 100vh;
+    background-color:rgb(red, green, blue);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    color: rgb(122, 33, 82);
+}
+
+#hero h1{
+    font-size: 3rem;
+    margin-bottom: 0,5rem;
+}
+
+#hero .highlight{
+    color: rgb(118, 131, 57);
+}
+
+#hero .tagline{
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+}
+
+.btn{
+    display: inline-block;
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.btn-primary{
+    background-color: black;
+    color: beige;
+}
+
+.btn-primary:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px black;
+}
+
+.btn:hover {
+    background-color: rgb(197, 21, 21);
+}
+
+.section{
+    padding: 4rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section h2{
+    font-size: 2rem;
+    margin-top: 8px;
+    text-align: center;
+}
+
+.skill-list{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+}
+
+.skill-card{
+    background: black;
+    padding: 2rem;
+    border-radius: 15px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.skill-card:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 5px 10px;
+}
+
+.skill-card h3{
+    margin-bottom: 5px;
+    color: wheat;
+}
+
+.proyek-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.proyek-card{
+    background-color: wheat;
+    display: grid;
+    grid-template-columns: repeat(3. 1fr);
+    border-radius: 15px;
+}
+
+.proyek-card:hover{
+     transform: translateY(-5px);
+    box-shadow: 0 5px 10px;
+}
+
+.foto-profil{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.proyek-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.proyek-card h3{
+    padding: 1rem;
+color: aqua;
+}
+
+.proyek-card p{
+    padding: 0 1.5rem 1rem;
+}
+
+.proyek-card .btn{
+    width: 80%;
+    margin: 1rem;
+    border-radius: 10px;
+    background-color: rgb(255, 48, 162);
+    color: #000;
+}
+
+.tabel-pengalaman{
+    color: wheat;
+    width: 100%;
+    border-collapse: collapse;
+    color: peru;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 5px 10px black;
+}
+
+.tabel-pengalaman thead{
+    background-color:rgb(197, 21, 21);
+}
+
+.tabel-pengalaman th{
+    padding: 1rem;
+    text-align: left;
+}
+
+.tabel-pengalaman td {
+    padding: 1rem;
+}
+
+.tabel-pengalaman tbody tr:nth-child(even){
+    background-color: pink;
+}
+
+.tabel-pengalaman tbody tr:hover{
+    background-color: grey;
+    color: goldenrod;
+}
+
+.form-kontak{
+    max-width: 600px;
+    background-color: blueviolet;
+    border-radius: 15px;
+    margin: 0 auto;
+    padding: 2rem;
+    box-shadow: 0px 5px 10px rgba(red, green, blue, alpha);
+}
+
+.form-group{
+    margin-bottom: 1rem;
+}
+
+.form-group label{
+display: block;
+font-weight: bold;
+margin-bottom: 0,5rem;
+}
+
+.form-group input,
+.form-group textarea{
+    width: 100%;
+    border: 2px solid gray;
+     border-radius: 8px;
+     padding: 0.5rem;
+}
+
+.form-group input:focus,
+.form-group textarea:focus{
+    width: 100%;
+    border: 2px solid gray;
+     border-radius: 8px;
+     padding: 0.5rem;
+}
+
+.form-kontak button{
+    width: 100px;
+    border-radius: 10px;
+    background-color: #7e0707;
+    color: rgb(255, 255, 255);
+}
+
+#footer{
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 1rem;
+}
+
+#footer p{
+    margin-bottom: 0.5rem;
+}
+
+#footer .sosmed
